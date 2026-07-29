@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --brand-primary: #567354;
+  --brand-primary-light: #6B8C69;
+  --brand-primary-dark: #4A6248;
+  --brand-cream: #FDFBF7;
+  --brand-charcoal: #2E2E2A;
+  --brand-gray: #6B6B65;
+  --brand-border: #E5E5E0;
+  --brand-light-gray: #D1D5DB;
+  
+  --status-success: #10B981;
+  --status-error: #EF4444;
+  --status-warning: #F59E0B;
+  --status-disabled: #9CA3AF;
+}
+
+@theme inline {
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-charcoal: var(--brand-charcoal);
+  --color-brand-gray: var(--brand-gray);
+  --color-brand-border: var(--brand-border);
+  
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+@media (max-width: 767px) {
+  html {
+    scroll-padding-top: 4.5rem;
+  }
+
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+}
+
+body {
+  background: var(--brand-cream);
+  color: var(--brand-charcoal);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.article-subheading {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--brand-charcoal);
+}
