@@ -22,12 +22,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const article = await getArticleBySlug(slug);
   if (!article) return {};
+  const ogImage = article.ogImage || article.coverImage || undefined;
   return {
     title: article.title,
     description: article.excerpt,
     openGraph: {
       title: article.title,
       description: article.excerpt,
+      images: ogImage ? [{ url: ogImage }] : undefined,
     },
   };
 }
@@ -92,6 +94,17 @@ export default async function ArtikelDetailPage({
                 </div>
               </div>
             </header>
+
+            {article.coverImage && (
+              <div className="relative mt-8 aspect-video overflow-hidden rounded-xl">
+                <img
+                  src={article.coverImage}
+                  alt={article.title}
+                  className="h-full w-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+            )}
 
             {/* Content */}
             <div className="mt-8">

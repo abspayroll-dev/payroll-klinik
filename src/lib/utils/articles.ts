@@ -9,6 +9,7 @@ export interface Article {
   body?: any[];
   coverImage?: string | null;
   author?: { name: string; title?: string; photo?: string | null } | null;
+  ogImage?: string | null;
 }
 
 export interface SanityArticle {
@@ -24,6 +25,7 @@ export interface SanityArticle {
   body?: any[];
   content?: string;
   seo?: { metaTitle?: string; metaDescription?: string; ogImage?: any };
+  ogImage?: string | null;
 }
 
 const FALLBACK_ARTICLES: Article[] = [
@@ -315,6 +317,7 @@ function convertSanityToArticle(sanity: SanityArticle): Article {
     body: sanity.body,
     coverImage: sanity.coverImage,
     author: sanity.author,
+    ogImage: sanity.seo?.ogImage?.asset?.url || null,
   };
 }
 

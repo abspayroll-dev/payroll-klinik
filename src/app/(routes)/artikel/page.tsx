@@ -7,6 +7,8 @@ import { getArticles } from '@/lib/utils/articles';
 import Link from 'next/link';
 import { Clock, ArrowRight } from 'lucide-react';
 
+export const revalidate = 60;
+
 export default async function ArtikelPage() {
   const ARTICLES = await getArticles();
   return (
@@ -30,6 +32,16 @@ export default async function ArtikelPage() {
               >
                 <Card className="h-full transition-all hover:shadow-xl">
                   <CardHeader>
+                    {article.coverImage && (
+                      <div className="relative mb-4 aspect-video overflow-hidden rounded-lg">
+                        <img
+                          src={article.coverImage}
+                          alt={article.title}
+                          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
                     <div className="mb-3 flex items-center justify-between text-sm">
                       <span className="rounded-full bg-[#567354]/10 px-3 py-1 text-xs font-medium text-[#567354]">
                         {article.topic}

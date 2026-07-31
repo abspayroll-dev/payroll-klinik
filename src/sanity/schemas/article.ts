@@ -40,7 +40,7 @@ export const articleSchema = defineType({
     defineField({
       name: 'author',
       type: 'reference',
-      to: [{ type: 'consultant' }],
+      to: [{ type: 'author' }],
       title: 'Penulis',
     }),
     defineField({
@@ -94,7 +94,7 @@ export const articleSchema = defineType({
       const { title, author, media } = selection;
       return {
         title,
-        subtitle: author ? `by ${author}` : 'No author',
+        subtitle: author ? `oleh ${author}` : 'Tidak ada penulis',
         media,
       };
     },

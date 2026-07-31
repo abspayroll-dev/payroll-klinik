@@ -6,7 +6,7 @@ const ARTICLES_QUERY = `*[_type == "article"] | order(publishedAt desc) {
   "slug": slug.current,
   excerpt,
   "coverImage": coverImage.asset->url,
-  "author": author->{name, title, "photo": photo.asset->url},
+  "author": author->{name, "photo": photo.asset->url},
   publishedAt,
   "topic": topic->title,
   "readTime": round(length(pt::text(body)) / 1500)
@@ -18,7 +18,7 @@ const ARTICLE_BY_SLUG_QUERY = `*[_type == "article" && slug.current == $slug][0]
   "slug": slug.current,
   excerpt,
   "coverImage": coverImage.asset->url,
-  "author": author->{name, title, "photo": photo.asset->url},
+  "author": author->{name, "photo": photo.asset->url},
   publishedAt,
   "topic": topic->title,
   "readTime": round(length(pt::text(body)) / 1500),
