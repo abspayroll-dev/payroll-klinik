@@ -59,7 +59,7 @@ function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void 
                 onClose();
               }}
             >
-              Daftar Periksa
+              Daftar Konsultasi
             </CTAButton>
           </div>
         </div>
@@ -186,7 +186,7 @@ export function Navigation() {
               {/* Desktop CTA Button */}
               <div className="hidden lg:block">
                 <CTAButton onClick={scrollToForm}>
-                  Daftar Periksa
+              Daftar Konsultasi
                 </CTAButton>
               </div>
             </div>
