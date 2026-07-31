@@ -22,6 +22,8 @@ export async function POST(request: Request) {
       utmCampaign,
     } = body;
 
+    const preferensiText = preferensi === 'offline' ? 'On-site' : preferensi.charAt(0).toUpperCase() + preferensi.slice(1);
+
     const formData = {
       nama,
       jabatan,
@@ -32,7 +34,7 @@ export async function POST(request: Request) {
       whatsapp,
       topik,
       tantangan,
-      preferensi,
+      preferensi: preferensiText,
     };
 
     let sheetsSuccess = true;
