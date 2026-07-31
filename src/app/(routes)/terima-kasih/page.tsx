@@ -68,7 +68,7 @@ export default function TerimaKasihPage() {
                   <div>
                     <h3 className="font-semibold text-[#2E2E2A]">Sesi Diagnosa 1-on-1 (50 Menit)</h3>
                     <p className="mt-1 text-sm text-[#6B6B65]">
-                      Diskusi interaktif sesuai preferensi Anda: Online (Zoom) atau Offline (AKMANI Hotel, Menteng, Jakarta Pusat).
+                      Diskusi interaktif sesuai preferensi Anda: Online (Zoom) atau On-site (AKMANI Hotel, Menteng, Jakarta Pusat).
                     </p>
                   </div>
                 </div>

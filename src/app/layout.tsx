@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     default: 'Payroll Klinik - Konsultasi Payroll Gratis untuk Perusahaan',
     template: '%s | Payroll Klinik'
   },
-  description: 'Konsultasi payroll gratis 50 menit dengan praktisi berpengalaman. Diagnosa PPh 21 TER, BPJS, compliance payroll untuk HR & Finance Manager. Online/Offline.',
+  description: 'Konsultasi payroll gratis 50 menit dengan praktisi berpengalaman. Diagnosa PPh 21 TER, BPJS, compliance payroll untuk HR & Finance Manager. Online/On-site.',
   keywords: ['payroll', 'konsultasi', 'BPJS', 'PPh 21', 'HR', 'payroll Indonesia', 'gratis'],
   authors: [{ name: 'ABS Payroll' }],
   openGraph: {

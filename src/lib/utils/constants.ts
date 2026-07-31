@@ -145,7 +145,7 @@ export const JUMLAH_KARYAWAN_OPTIONS = [
 
 export const PREFERENSI_OPTIONS = [
   { value: 'online', label: 'Online' },
-  { value: 'offline', label: 'Offline' },
+  { value: 'offline', label: 'On-site' },
   { value: 'fleksibel', label: 'Fleksibel' },
 ] as const;
 

@@ -111,7 +111,7 @@ export function Hero() {
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <svg className="h-4 w-4 text-[#567354] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
-                <span>Online / Offline</span>
+                <span>Online / On-site</span>
               </span>
               <span className="inline-flex items-center gap-1.5">
                 <svg className="h-4 w-4 text-[#567354] flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" /></svg>
