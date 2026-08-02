@@ -106,8 +106,8 @@ export const FAQ_ITEMS = [
     answer: 'Data Anda hanya digunakan untuk keperluan konsultasi. Selengkapnya bisa dibaca di Kebijakan Privasi.',
   },
   {
-    question: 'Bisa offline atau hanya online?',
-    answer: 'Bisa keduanya. Anda bisa pilih konsultasi online (Zoom/Google Meet) atau offline di AKMANI HOTEL, Jakarta.',
+    question: 'Bisa on-site atau hanya online?',
+    answer: 'Bisa keduanya. Anda bisa pilih konsultasi online (Zoom/Google Meet) atau on-site di AKMANI HOTEL, Jakarta.',
   },
 ] as const;
 
