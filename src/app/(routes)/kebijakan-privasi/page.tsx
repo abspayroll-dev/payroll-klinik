@@ -37,7 +37,7 @@ export default function KebijakanPrivasiPage() {
                   <li>Email dan nomor WhatsApp/telepon</li>
                   <li>Topik konsultasi yang Anda pilih</li>
                   <li>Deskripsi tantangan payroll yang Anda hadapi</li>
-                  <li>Preferensi konsultasi (online/offline)</li>
+                  <li>Preferensi konsultasi (on-site/online)</li>
                 </ul>
               </section>
 
